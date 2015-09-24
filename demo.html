@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />	
+<style>
+*{
+	margin:0;
+	padding:0;
+}	
+#J_calendar{
+	width:300px;
+}
+#J_calendar_today{
+	float:right;
+}
+.J_calendar_cell,#J_calendar_day span{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:14%;
+	line-height:2;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="J_calendar">
+	<div id="J_calendar_ctr">
+		<span id="J_calendar_today"></span>
+		<select id="J_calendar_year"></select>年
+		<select id="J_calendar_month"></select>月
+	</div>
+	<div id="J_calendar_day">
+		<span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+	</div>
+	<div id="J_calendar_main"></div>
+</div>
+<script src="calendar.js"></script>
+<script>
+Calendar.init();
+</script>	
+</body>	
+</html>
